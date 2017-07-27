@@ -29,6 +29,14 @@ ATTiny85 Arduino Pins:
 This runs a motor using stored power in the capacitor.
 When the Vcap voltage is above a certain amount the motor is run unit the voltage drops.
 
+Control is as follows:
+
+* Wake up on Watch Dog Timer (every 1 second)
+* If Vcap > Vhigh then incremetn the motor PWM (max 255)
+* If Vcap < Vlow then decrement the PWM (min 0)
+* Enter sleep
+
+
 ### LED Nightlight
 
 Automatically switches on an LED when the solar input is low. This will run until the capacitor voltage is too low.
