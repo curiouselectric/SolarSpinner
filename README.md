@@ -24,6 +24,14 @@ ATTiny85 Arduino Pins:
 
 ## Software Modes
 
+Note: There are only 3 sleep modes for the ATTiny25/45/85
+
+These are: IDLE, ADC power down and Power-Down
+
+If we want to use the PWM to give an output then we need to use IDLE.
+
+See datasheet for more details: http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf
+
 ### Motor Control
 
 This runs a motor using stored power in the capacitor.
