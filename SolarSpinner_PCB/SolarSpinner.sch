@@ -173,7 +173,7 @@ F 3 "" H 3700 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATTINY85-P IC1
+L ATTINY85-P-RESCUE-SolarSpinner IC1
 U 1 1 58FDDFEF
 P 3600 5150
 F 0 "IC1" H 3700 5200 60  0000 C CNN
@@ -328,7 +328,7 @@ U 1 1 58FDE7A4
 P 4100 4700
 F 0 "P4" H 4100 4900 50  0000 C CNN
 F 1 "ISP" H 4100 4500 50  0000 C CNN
-F 2 "matts_components:ISP_3x2" H 4100 3500 50  0001 C CNN
+F 2 "REInnovationFootprint:ISP_3x2" H 4100 3500 50  0001 C CNN
 F 3 "" H 4100 3500 50  0000 C CNN
 	1    4100 4700
 	1    0    0    -1  
@@ -588,17 +588,6 @@ Wire Wire Line
 	3150 6400 3150 5650
 Connection ~ 3150 5650
 $Comp
-L LED-RESCUE-SolarSpinner D2
-U 1 1 5917694E
-P 2150 6000
-F 0 "D2" H 2150 6100 50  0000 C CNN
-F 1 "LED" H 2150 5900 50  0000 C CNN
-F 2 "matts_components:LED-5MM_larg_pad" H 2150 6000 50  0001 C CNN
-F 3 "" H 2150 6000 50  0000 C CNN
-	1    2150 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L R R6
 U 1 1 591769AF
 P 2150 5600
@@ -613,12 +602,12 @@ Connection ~ 3050 5450
 $Comp
 L GND #PWR014
 U 1 1 59176BF9
-P 2150 6350
-F 0 "#PWR014" H 2150 6100 50  0001 C CNN
-F 1 "GND" H 2150 6200 50  0000 C CNN
-F 2 "" H 2150 6350 50  0000 C CNN
-F 3 "" H 2150 6350 50  0000 C CNN
-	1    2150 6350
+P 2150 6450
+F 0 "#PWR014" H 2150 6200 50  0001 C CNN
+F 1 "GND" H 2150 6300 50  0000 C CNN
+F 2 "" H 2150 6450 50  0000 C CNN
+F 3 "" H 2150 6450 50  0000 C CNN
+	1    2150 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -636,5 +625,18 @@ Wire Notes Line
 Wire Wire Line
 	2150 5750 2150 5850
 Wire Wire Line
-	2150 6150 2150 6350
+	2150 6250 2150 6450
+Text Notes 1000 5200 0    60   ~ 0
+ATTiny85 Arduino Pins:\nIC Pin:       Arduino Ref:\n1                5/A0/RST\n2                3/A3\n3                4/A2\n4                GND\n5                0 - PWM\n6                1 - PWM\n7                2/A1\n8                +Supply
+$Comp
+L LED D2
+U 1 1 5968E412
+P 2150 6050
+F 0 "D2" H 2150 6150 50  0000 C CNN
+F 1 "LED" H 2150 5950 50  0000 C CNN
+F 2 "REInnovationFootprint:LED-5MM_larg_pad" H 2150 6050 50  0001 C CNN
+F 3 "" H 2150 6050 50  0000 C CNN
+	1    2150 6050
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

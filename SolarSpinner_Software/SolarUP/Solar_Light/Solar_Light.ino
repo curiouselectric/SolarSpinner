@@ -19,19 +19,20 @@
 #define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
 #endif
 
-int pinLed = 2;
-int pinMotor = 1;
-int Vin = A3;
+int pinLed = 2; // NO PWM available!! Do software PWM?
+int pinMotor = 1; // PWM OK
+int Vcap = A3;
+int Vsolar = A2;
 volatile boolean f_wdt = 1;
 
-float Vlow = 3.0;
+float Vlow = 2.0;
 float Vhigh = 4.0;
 float Vpower;
 
 void setup() {
   pinMode(pinLed, OUTPUT);
   pinMode(pinMotor, OUTPUT);  
-  setup_watchdog(8); // approximately 4 seconds sleep
+  setup_watchdog(4); // approximately 0.25 seconds sleep
   analogReference(INTERNAL);
 }
 
@@ -43,41 +44,27 @@ void loop() {
     // If its higher than 4.5V (Vhigh) then switch on the motor
     // Stay switched on until voltage lower than 3.5 (Vlow)
     
-    Vpower = analogRead(Vin) *(1.1/1024.0)*(110.0/10.0);   //Turn into a real (ish) voltage
+    Vpower = analogRead(Vsolar) *(1.1/1024.0)*(110.0/10.0);   //Turn into a real (ish) voltage
 
-    if(Vpower>=Vhigh)
+    if(Vpower<=Vlow)
     {
-      while(Vpower>Vlow)
-      {
-        digitalWrite(pinLed, HIGH); // let led blink
-        digitalWrite(pinMotor, HIGH); // let led blink
-        delay(500);    
-        Vpower = analogRead(Vin) *(1.1/1024.0)*(110.0/10.0);   //Turn into a real (ish) voltage
-      }
+       analogWrite(pinLed, 255); // PWM LED at 25%
+       digitalWrite(pinMotor, HIGH); // let led blink
+       delay(50);    
+       Vpower = analogRead(Vsolar) *(1.1/1024.0)*(110.0/10.0);   //Turn into a real (ish) voltage
+    }
+    else
+    {
+      analogWrite(pinLed, 0); // PWM LED at 25%
     }
 
-    digitalWrite(pinLed, LOW);  
+    //digitalWrite(pinLed, LOW);  
     digitalWrite(pinMotor, LOW); // let led blink
     
-//    while(analogRead(Vin)> 350)
-//    {
-//      digitalWrite(pinLed, HIGH); // let led blink
-//      delay(100);
-//      digitalWrite(pinLed, LOW);
-//      delay(100);
-//    }
-//    else
-//    {
-//      digitalWrite(pinLed, LOW);
-//    }
-//    digitalWrite(pinLed, HIGH); // let led blink
-//    delay(30);
-//    digitalWrite(pinLed, LOW);
-    
-    pinMode(pinLed, INPUT); // set all used port to intput to save power
+    //pinMode(pinLed, INPUT); // set all used port to intput to save power
     pinMode(pinMotor, INPUT); // set all used port to intput to save power
     system_sleep();
-    pinMode(pinLed, OUTPUT); // set all ports into state before sleep
+    //pinMode(pinLed, OUTPUT); // set all ports into state before sleep
     pinMode(pinMotor, OUTPUT); // set all ports into state before sleep
   }
 }
@@ -87,7 +74,7 @@ void loop() {
 void system_sleep() {
   cbi(ADCSRA, ADEN);                   // switch Analog to Digitalconverter OFF
 
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN); // sleep mode is set here
+  set_sleep_mode(SLEEP_MODE_IDLE); // sleep mode is set here
   sleep_enable();
 
   sleep_mode();                        // System sleeps here

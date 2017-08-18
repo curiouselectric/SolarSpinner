@@ -1,4 +1,4 @@
-update=11/06/2017 15:26:45
+update=14/07/2017 14:21:57
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,9 +25,19 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=../../../../../KiCAD/kicad_reinnovation/KiCad My Libraries
+LibDir=../../../../../../KiCAD/kicad_reinnovation/KiCad My Libraries
 [eeschema/libraries]
 LibName1=SolarSpinner-rescue
 LibName2=power
@@ -62,13 +72,3 @@ LibName30=valves
 LibName31=D:/Google Drive/KiCAD/KiCad My Libraries/matts_components
 LibName32=E:/Google Drive/KiCAD/KiCad My Libraries/matts_components
 LibName33=E:/Google Drive/KiCAD/kicad_reinnovation/KiCad My Libraries/matts_components
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
