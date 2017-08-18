@@ -627,7 +627,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 6250 2150 6450
 Text Notes 1000 5200 0    60   ~ 0
-ATTiny85 Arduino Pins:\nIC Pin:       Arduino Ref:\n1                5/A0\n2                3/A3\n3                4/A2\n4                GND\n5                0\n6                1\n7                2/A1\n8                +Supply
+ATTiny85 Arduino Pins:\nIC Pin:       Arduino Ref:\n1                5/A0/RST\n2                3/A3\n3                4/A2\n4                GND\n5                0 - PWM\n6                1 - PWM\n7                2/A1\n8                +Supply
 $Comp
 L LED D2
 U 1 1 5968E412

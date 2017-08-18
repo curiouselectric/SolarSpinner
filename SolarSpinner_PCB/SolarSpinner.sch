@@ -53,15 +53,17 @@ F 0 "C1" H 3125 2150 50  0000 L CNN
 F 1 "0.47F" H 3125 1950 50  0000 L CNN
 F 2 "REInnovationFootprint:C_0_47F_SuperCap" H 3138 1900 50  0001 C CNN
 F 3 "" H 3100 2050 50  0000 C CNN
-F 4 "~" H 3100 2050 60  0001 C CNN "Description"
-F 5 "~" H 3100 2050 60  0001 C CNN "Notes"
+F 4 "~" H 3100 2050 60  0001 C CNN "Notes"
+F 5 "~" H 3100 2050 60  0001 C CNN "Description"
 F 6 "~" H 3100 2050 60  0001 C CNN "Manufacturer"
 F 7 "~" H 3100 2050 60  0001 C CNN "Manufacturer Part No"
-F 8 "~" H 3100 2050 60  0001 C CNN "Supplier 1"
+F 8 "Aliexpress" H 3100 2050 60  0001 C CNN "Supplier 1"
 F 9 "~" H 3100 2050 60  0001 C CNN "Supplier 1 Part No"
-F 10 "~" H 3100 2050 60  0001 C CNN "Supplier 2"
-F 11 "~" H 3100 2050 60  0001 C CNN "Supplier 2 Part No"
-F 12 "~" H 3100 2050 60  0001 C CNN "Cost"
+F 10 "0.4" H 3100 2050 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 3100 2050 60  0001 C CNN "Supplier 2"
+F 12 "~" H 3100 2050 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 3100 2050 60  0001 C CNN "Supplier 2 Cost"
+F 14 "~" H 3100 2050 60  0001 C CNN "Cost"
 	1    3100 2050
 	1    0    0    -1  
 $EndComp
@@ -73,6 +75,16 @@ F 0 "SC1" H 2150 2150 50  0000 L CNN
 F 1 "PV_CELL" H 2150 2050 50  0000 L CNN
 F 2 "REInnovationFootprint:PV_50x30mm" V 2050 2110 50  0001 C CNN
 F 3 "" V 2050 2110 50  0000 C CNN
+F 4 "~" H 2050 2050 60  0000 C CNN "Notes"
+F 5 "53x30mm 30mA 5V PV module" H 2050 2050 60  0001 C CNN "Description"
+F 6 "~" H 2050 2050 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2050 2050 60  0001 C CNN "Manufacturer Part No"
+F 8 "Aliexpress" H 2050 2050 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2050 2050 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.7" H 2050 2050 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 2050 2050 60  0001 C CNN "Supplier 2"
+F 12 "~" H 2050 2050 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 2050 2050 60  0001 C CNN "Supplier 2 Cost"
 	1    2050 2050
 	1    0    0    -1  
 $EndComp
@@ -84,6 +96,16 @@ F 0 "D1" H 2500 1700 50  0000 C CNN
 F 1 "1N5819" H 2500 1500 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Diode_1" H 2500 1600 50  0001 C CNN
 F 3 "" H 2500 1600 50  0000 C CNN
+F 4 "~" H 2500 1600 60  0000 C CNN "Notes"
+F 5 "~" H 2500 1600 60  0001 C CNN "Description"
+F 6 "~" H 2500 1600 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2500 1600 60  0001 C CNN "Manufacturer Part No"
+F 8 "RS" H 2500 1600 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2500 1600 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.03" H 2500 1600 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 2500 1600 60  0001 C CNN "Supplier 2"
+F 12 "~" H 2500 1600 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 2500 1600 60  0001 C CNN "Supplier 2 Cost"
 	1    2500 1600
 	-1   0    0    1   
 $EndComp
@@ -180,15 +202,17 @@ F 0 "IC1" H 3700 5200 60  0000 C CNN
 F 1 "ATTINY85-P" H 5600 4400 60  0000 C CNN
 F 2 "REInnovationFootprint:DIP-8_300_ELL" H 3700 4400 60  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1744708.pdf?_ga=2.238630600.937687315.1494695229-1523402957.1422198431" H 3600 5150 60  0001 C CNN
-F 4 "8 Bit uP 20MHz" H 3600 5150 60  0001 C CNN "Description"
-F 5 "~" H 3600 5150 60  0001 C CNN "Notes"
+F 4 "~" H 3600 5150 60  0001 C CNN "Notes"
+F 5 "8 Bit uP 20MHz" H 3600 5150 60  0001 C CNN "Description"
 F 6 "ATMEL" H 3600 5150 60  0001 C CNN "Manufacturer"
 F 7 "ATTINY85-20PU" H 3600 5150 60  0001 C CNN "Manufacturer Part No"
 F 8 "Farnell" H 3600 5150 60  0001 C CNN "Supplier 1"
 F 9 "1455162" H 3600 5150 60  0001 C CNN "Supplier 1 Part No"
-F 10 "~" H 3600 5150 60  0001 C CNN "Supplier 2"
-F 11 "~" H 3600 5150 60  0001 C CNN "Supplier 2 Part No"
-F 12 "1.12" H 3600 5150 60  0001 C CNN "Cost"
+F 10 "1.12" H 3600 5150 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 3600 5150 60  0001 C CNN "Supplier 2"
+F 12 "~" H 3600 5150 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 3600 5150 60  0001 C CNN "Supplier 2 Cost"
+F 14 "~" H 3600 5150 60  0001 C CNN "Cost"
 	1    3600 5150
 	1    0    0    -1  
 $EndComp
@@ -200,15 +224,17 @@ F 0 "C2" H 6325 5600 50  0000 L CNN
 F 1 "100n" H 6325 5400 50  0000 L CNN
 F 2 "matts_components:C1_wide_lg_pad" H 6338 5350 50  0001 C CNN
 F 3 "" H 6300 5500 50  0000 C CNN
-F 4 "~" H 6300 5500 60  0001 C CNN "Description"
-F 5 "~" H 6300 5500 60  0001 C CNN "Notes"
+F 4 "~" H 6300 5500 60  0001 C CNN "Notes"
+F 5 "~" H 6300 5500 60  0001 C CNN "Description"
 F 6 "~" H 6300 5500 60  0001 C CNN "Manufacturer"
 F 7 "~" H 6300 5500 60  0001 C CNN "Manufacturer Part No"
-F 8 "~" H 6300 5500 60  0001 C CNN "Supplier 1"
+F 8 "Rapid" H 6300 5500 60  0001 C CNN "Supplier 1"
 F 9 "~" H 6300 5500 60  0001 C CNN "Supplier 1 Part No"
-F 10 "~" H 6300 5500 60  0001 C CNN "Supplier 2"
-F 11 "~" H 6300 5500 60  0001 C CNN "Supplier 2 Part No"
-F 12 "~" H 6300 5500 60  0001 C CNN "Cost"
+F 10 "0.07" H 6300 5500 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 6300 5500 60  0001 C CNN "Supplier 2"
+F 12 "~" H 6300 5500 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 6300 5500 60  0001 C CNN "Supplier 2 Cost"
+F 14 "~" H 6300 5500 60  0001 C CNN "Cost"
 	1    6300 5500
 	1    0    0    -1  
 $EndComp
@@ -220,6 +246,16 @@ F 0 "R3" V 2830 3000 50  0000 C CNN
 F 1 "100k" V 2750 3000 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 2680 3000 50  0001 C CNN
 F 3 "" H 2750 3000 50  0000 C CNN
+F 4 "~" H 2750 3000 60  0000 C CNN "Notes"
+F 5 "~" H 2750 3000 60  0001 C CNN "Description"
+F 6 "~" H 2750 3000 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2750 3000 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 2750 3000 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2750 3000 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 2750 3000 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 2750 3000 60  0001 C CNN "Supplier 2"
+F 12 "~" H 2750 3000 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 2750 3000 60  0001 C CNN "Supplier 2 Cost"
 	1    2750 3000
 	-1   0    0    1   
 $EndComp
@@ -231,6 +267,16 @@ F 0 "R4" V 2830 3450 50  0000 C CNN
 F 1 "10k" V 2750 3450 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 2680 3450 50  0001 C CNN
 F 3 "" H 2750 3450 50  0000 C CNN
+F 4 "~" H 2750 3450 60  0000 C CNN "Notes"
+F 5 "~" H 2750 3450 60  0001 C CNN "Description"
+F 6 "~" H 2750 3450 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2750 3450 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 2750 3450 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2750 3450 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 2750 3450 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 2750 3450 60  0001 C CNN "Supplier 2"
+F 12 "~" H 2750 3450 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 2750 3450 60  0001 C CNN "Supplier 2 Cost"
 	1    2750 3450
 	-1   0    0    1   
 $EndComp
@@ -283,7 +329,7 @@ L Q_NPN_CBE Q1
 U 1 1 58FDE37F
 P 5750 2450
 F 0 "Q1" H 6050 2500 50  0000 R CNN
-F 1 "Q_NPN_CBE" H 6350 2400 50  0000 R CNN
+F 1 "BC547" H 6200 2400 50  0000 R CNN
 F 2 "REInnovationFootprint:TO92-EBC_large_pad" H 5950 2550 50  0001 C CNN
 F 3 "" H 5750 2450 50  0000 C CNN
 	1    5750 2450
@@ -297,6 +343,16 @@ F 0 "R5" V 5280 2450 50  0000 C CNN
 F 1 "330" V 5200 2450 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 5130 2450 50  0001 C CNN
 F 3 "" H 5200 2450 50  0000 C CNN
+F 4 "~" H 5200 2450 60  0000 C CNN "Notes"
+F 5 "~" H 5200 2450 60  0001 C CNN "Description"
+F 6 "~" H 5200 2450 60  0001 C CNN "Manufacturer"
+F 7 "~" H 5200 2450 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 5200 2450 60  0001 C CNN "Supplier 1"
+F 9 "~" H 5200 2450 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 5200 2450 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 5200 2450 60  0001 C CNN "Supplier 2"
+F 12 "~" H 5200 2450 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 5200 2450 60  0001 C CNN "Supplier 2 Cost"
 	1    5200 2450
 	0    -1   -1   0   
 $EndComp
@@ -330,6 +386,16 @@ F 0 "P4" H 4100 4900 50  0000 C CNN
 F 1 "ISP" H 4100 4500 50  0000 C CNN
 F 2 "REInnovationFootprint:ISP_3x2" H 4100 3500 50  0001 C CNN
 F 3 "" H 4100 3500 50  0000 C CNN
+F 4 "~" H 4100 4700 60  0000 C CNN "Notes"
+F 5 "~" H 4100 4700 60  0001 C CNN "Description"
+F 6 "~" H 4100 4700 60  0001 C CNN "Manufacturer"
+F 7 "~" H 4100 4700 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 4100 4700 60  0001 C CNN "Supplier 1"
+F 9 "~" H 4100 4700 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.05" H 4100 4700 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 4100 4700 60  0001 C CNN "Supplier 2"
+F 12 "~" H 4100 4700 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 4100 4700 60  0001 C CNN "Supplier 2 Cost"
 	1    4100 4700
 	1    0    0    -1  
 $EndComp
@@ -405,8 +471,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 4700 3200 4700
 Wire Wire Line
-	2150 5450 3400 5450
-Wire Wire Line
 	3850 4800 3250 4800
 $Comp
 L VCC #PWR09
@@ -422,18 +486,16 @@ $EndComp
 $Comp
 L GND #PWR010
 U 1 1 58FDF995
-P 4450 4850
-F 0 "#PWR010" H 4450 4600 50  0001 C CNN
-F 1 "GND" H 4450 4700 50  0000 C CNN
-F 2 "" H 4450 4850 50  0000 C CNN
-F 3 "" H 4450 4850 50  0000 C CNN
-	1    4450 4850
+P 4650 4850
+F 0 "#PWR010" H 4650 4600 50  0001 C CNN
+F 1 "GND" H 4650 4700 50  0000 C CNN
+F 2 "" H 4650 4850 50  0000 C CNN
+F 3 "" H 4650 4850 50  0000 C CNN
+	1    4650 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 4800 4450 4800
-Wire Wire Line
-	4450 4800 4450 4850
+	4350 4800 4650 4800
 Wire Wire Line
 	4350 4600 4450 4600
 Wire Wire Line
@@ -481,7 +543,7 @@ Connection ~ 3200 5450
 Wire Wire Line
 	2850 5650 3400 5650
 Wire Wire Line
-	3000 5250 3400 5250
+	2150 5250 3400 5250
 Connection ~ 3300 5250
 $Comp
 L R R1
@@ -491,6 +553,16 @@ F 0 "R1" V 1930 3000 50  0000 C CNN
 F 1 "100k" V 1850 3000 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 1780 3000 50  0001 C CNN
 F 3 "" H 1850 3000 50  0000 C CNN
+F 4 "~" H 1850 3000 60  0000 C CNN "Notes"
+F 5 "~" H 1850 3000 60  0001 C CNN "Description"
+F 6 "~" H 1850 3000 60  0001 C CNN "Manufacturer"
+F 7 "~" H 1850 3000 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 1850 3000 60  0001 C CNN "Supplier 1"
+F 9 "~" H 1850 3000 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 1850 3000 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 1850 3000 60  0001 C CNN "Supplier 2"
+F 12 "~" H 1850 3000 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 1850 3000 60  0001 C CNN "Supplier 2 Cost"
 	1    1850 3000
 	-1   0    0    1   
 $EndComp
@@ -502,6 +574,16 @@ F 0 "R2" V 1930 3450 50  0000 C CNN
 F 1 "10k" V 1850 3450 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 1780 3450 50  0001 C CNN
 F 3 "" H 1850 3450 50  0000 C CNN
+F 4 "~" H 1850 3450 60  0000 C CNN "Notes"
+F 5 "~" H 1850 3450 60  0001 C CNN "Description"
+F 6 "~" H 1850 3450 60  0001 C CNN "Manufacturer"
+F 7 "~" H 1850 3450 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 1850 3450 60  0001 C CNN "Supplier 1"
+F 9 "~" H 1850 3450 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 1850 3450 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 1850 3450 60  0001 C CNN "Supplier 2"
+F 12 "~" H 1850 3450 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 1850 3450 60  0001 C CNN "Supplier 2 Cost"
 	1    1850 3450
 	-1   0    0    1   
 $EndComp
@@ -595,10 +677,19 @@ F 0 "R6" V 2230 5600 50  0000 C CNN
 F 1 "330" V 2150 5600 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 2080 5600 50  0001 C CNN
 F 3 "" H 2150 5600 50  0000 C CNN
+F 4 "~" H 2150 5600 60  0000 C CNN "Notes"
+F 5 "~" H 2150 5600 60  0001 C CNN "Description"
+F 6 "~" H 2150 5600 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2150 5600 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 2150 5600 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2150 5600 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 2150 5600 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 2150 5600 60  0001 C CNN "Supplier 2"
+F 12 "~" H 2150 5600 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 2150 5600 60  0001 C CNN "Supplier 2 Cost"
 	1    2150 5600
 	1    0    0    -1  
 $EndComp
-Connection ~ 3050 5450
 $Comp
 L GND #PWR014
 U 1 1 59176BF9
@@ -636,7 +727,26 @@ F 0 "D2" H 2150 6150 50  0000 C CNN
 F 1 "LED" H 2150 5950 50  0000 C CNN
 F 2 "REInnovationFootprint:LED-5MM_larg_pad" H 2150 6050 50  0001 C CNN
 F 3 "" H 2150 6050 50  0000 C CNN
+F 4 "~" H 2150 6050 60  0000 C CNN "Notes"
+F 5 "5mm White LED ?" H 2150 6050 60  0001 C CNN "Description"
+F 6 "~" H 2150 6050 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2150 6050 60  0001 C CNN "Manufacturer Part No"
+F 8 "Aliexpress" H 2150 6050 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2150 6050 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.1" H 2150 6050 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 2150 6050 60  0001 C CNN "Supplier 2"
+F 12 "~" H 2150 6050 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 2150 6050 60  0001 C CNN "Supplier 2 Cost"
 	1    2150 6050
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2150 5250 2150 5450
+Connection ~ 3000 5250
+Wire Wire Line
+	3050 5450 3400 5450
+Text Notes 4850 4900 0    60   ~ 0
+ISP Connections:\n1 - MISO\n2 - Vcc\n3 - SCK\n4 - MOSI\n5 - RESET\n6 - GND\n
+Wire Wire Line
+	4650 4800 4650 4850
 $EndSCHEMATC
