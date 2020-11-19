@@ -1,0 +1,343 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SolarSpinner-rescue_C-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_C-Device-SolarSpinner-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "SolarSpinner-rescue_C-Device-SolarSpinner-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_CP-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_CP-Device-SolarSpinner-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "SolarSpinner-rescue_CP-Device-SolarSpinner-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 90 40 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Conn_01x01_Male-Connector-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Conn_01x01_Male-Connector-SolarSpinner-rescue J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "SolarSpinner-rescue_Conn_01x01_Male-Connector-SolarSpinner-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Conn_01x02_Female-Connector-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Conn_01x02_Female-Connector-SolarSpinner-rescue J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "SolarSpinner-rescue_Conn_01x02_Female-Connector-SolarSpinner-rescue" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Conn_01x02_Male-Connector-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Conn_01x02_Male-Connector-SolarSpinner-rescue J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "SolarSpinner-rescue_Conn_01x02_Male-Connector-SolarSpinner-rescue" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Conn_01x07_Male-Connector-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Conn_01x07_Male-Connector-SolarSpinner-rescue J 0 40 Y N 1 F N
+F0 "J" 0 400 50 H V C CNN
+F1 "SolarSpinner-rescue_Conn_01x07_Male-Connector-SolarSpinner-rescue" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -295 0 -305 1 1 6 F
+S 34 -195 0 -205 1 1 6 F
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+S 34 205 0 195 1 1 6 F
+S 34 305 0 295 1 1 6 F
+P 2 1 1 6 50 -300 34 -300 N
+P 2 1 1 6 50 -200 34 -200 N
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+P 2 1 1 6 50 200 34 200 N
+P 2 1 1 6 50 300 34 300 N
+X Pin_1 1 200 300 150 L 50 50 1 1 P
+X Pin_2 2 200 200 150 L 50 50 1 1 P
+X Pin_3 3 200 100 150 L 50 50 1 1 P
+X Pin_4 4 200 0 150 L 50 50 1 1 P
+X Pin_5 5 200 -100 150 L 50 50 1 1 P
+X Pin_6 6 200 -200 150 L 50 50 1 1 P
+X Pin_7 7 200 -300 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_D_Schottky-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_D_Schottky-Device-SolarSpinner-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "SolarSpinner-rescue_D_Schottky-Device-SolarSpinner-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_LED-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_LED-Device-SolarSpinner-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "SolarSpinner-rescue_LED-Device-SolarSpinner-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Q_NPN_CBE-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Q_NPN_CBE-Device-SolarSpinner-rescue Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "SolarSpinner-rescue_Q_NPN_CBE-Device-SolarSpinner-rescue" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 50 0 111 0 1 10 N
+P 2 0 1 0 25 25 100 100 N
+P 3 0 1 0 25 -25 100 -100 100 -100 N
+P 3 0 1 20 25 75 25 -75 25 -75 N
+P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
+X C 1 100 200 100 D 50 50 1 1 P
+X B 2 -200 0 225 R 50 50 1 1 I
+X E 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_R-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_R-Device-SolarSpinner-rescue R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "SolarSpinner-rescue_R-Device-SolarSpinner-rescue" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Solar_Cells-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Solar_Cells-Device-SolarSpinner-rescue SC 0 0 N N 1 F N
+F0 "SC" 100 100 50 H V L CNN
+F1 "SolarSpinner-rescue_Solar_Cells-Device-SolarSpinner-rescue" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -80 -55 80 -65 0 1 0 F
+S -80 70 80 60 0 1 0 F
+S -52 -78 50 -98 0 1 0 F
+S -52 47 50 27 0 1 0 F
+P 2 0 1 0 -100 10 -160 70 N
+P 2 0 1 0 -100 90 -160 150 N
+P 2 0 1 0 0 -60 0 -50 N
+P 2 0 1 0 0 -40 0 -30 N
+P 2 0 1 0 0 -20 0 -10 N
+P 2 0 1 0 0 0 0 10 N
+P 2 0 1 0 0 20 0 30 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 10 105 50 105 N
+P 2 0 1 10 30 125 30 85 N
+P 3 0 1 0 -100 40 -100 10 -130 10 N
+P 3 0 1 0 -100 120 -100 90 -130 90 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_Speaker-Device-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_Speaker-Device-SolarSpinner-rescue LS 0 0 Y N 1 F N
+F0 "LS" 50 225 50 H V R CNN
+F1 "SolarSpinner-rescue_Speaker-Device-SolarSpinner-rescue" 50 150 50 H V R CNN
+F2 "" 0 -200 50 H I C CNN
+F3 "" -10 -50 50 H I C CNN
+DRAW
+S -100 50 40 -150 0 0 10 N
+P 4 0 0 10 40 50 140 150 140 -250 40 -150 N
+X 1 1 -200 0 100 R 50 50 1 1 I
+X 2 2 -200 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# SolarSpinner-rescue_VCC-power-SolarSpinner-rescue
+#
+DEF SolarSpinner-rescue_VCC-power-SolarSpinner-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "SolarSpinner-rescue_VCC-power-SolarSpinner-rescue" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# matts_components_ATTINY85-P
+#
+DEF matts_components_ATTINY85-P IC 0 40 Y Y 1 F N
+F0 "IC" 100 50 60 H V C CNN
+F1 "matts_components_ATTINY85-P" 2000 -750 60 H V C CNN
+F2 "DIP8" 100 -750 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 0 0 2300 -700 0 1 0 f
+X PB5(~RESET~/dW/ADC0/PCINT5) 1 -200 -600 200 R 50 50 1 1 B
+X PB3(XTAL1/CLKI/OC1B/ADC3/PCINT3) 2 -200 -400 200 R 50 50 1 1 B
+X PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4) 3 -200 -500 200 R 50 50 1 1 B
+X GND 4 2500 -600 200 L 50 50 1 1 W
+X PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0) 5 -200 -100 200 R 50 50 1 1 B
+X PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1) 6 -200 -200 200 R 50 50 1 1 B
+X PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2) 7 -200 -300 200 R 50 50 1 1 B
+X VCC 8 2500 -100 200 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# matts_components_DIODE
+#
+DEF matts_components_DIODE D 0 40 N N 1 F N
+F0 "D" 0 100 40 H V C CNN
+F1 "matts_components_DIODE" 0 -100 40 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ D?
+ S*
+$ENDFPLIST
+DRAW
+P 2 0 1 6 50 50 50 -50 N
+P 3 0 1 0 -50 50 50 0 -50 -50 F
+X A 1 -200 0 150 R 40 40 1 1 P
+X K 2 200 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# matts_components_GND
+#
+DEF ~matts_components_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 0 30 H I C CNN
+F1 "matts_components_GND" 0 -70 30 H I C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 4 0 1 0 -50 0 0 -50 50 0 -50 0 N
+X GND 1 0 0 0 U 30 30 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# matts_components_ISP_3X2
+#
+DEF matts_components_ISP_3X2 P 0 40 Y N 1 F N
+F0 "P" 0 250 50 H V C CNN
+F1 "matts_components_ISP_3X2" 0 50 40 V V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -100 200 100 -100 0 1 0 N
+X 1 1 -400 150 300 R 60 60 1 1 P I
+X 2 2 400 150 300 L 60 60 1 1 P I
+X 3 3 -400 50 300 R 60 60 1 1 P I
+X 4 4 400 50 300 L 60 60 1 1 P I
+X 5 5 -400 -50 300 R 60 60 1 1 P I
+X 6 6 400 -50 300 L 60 60 1 1 P I
+ENDDRAW
+ENDDEF
+#
+#End Library
