@@ -64,10 +64,10 @@ F 13 "~" H 2200 1400 60  0001 C CNN "Supplier 2 Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarSpinner-rescue:Conn_01x01_Male-Connector-SolarSpinner-rescue P7
+L SolarSpinner-rescue:Conn_01x01_Male-Connector-SolarSpinner-rescue P6
 U 1 1 58A4A9B1
 P 10300 6100
-F 0 "P7" H 10300 6200 50  0000 C CNN
+F 0 "P6" H 10300 6200 50  0000 C CNN
 F 1 "LOGO1" V 10150 6100 50  0000 C CNN
 F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 10300 6100 50  0001 C CNN
 F 3 "" H 10300 6100 50  0000 C CNN
@@ -75,10 +75,10 @@ F 3 "" H 10300 6100 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L SolarSpinner-rescue:Conn_01x01_Male-Connector-SolarSpinner-rescue P8
+L SolarSpinner-rescue:Conn_01x01_Male-Connector-SolarSpinner-rescue P7
 U 1 1 58A4AA34
 P 10600 6100
-F 0 "P8" H 10600 6200 50  0000 C CNN
+F 0 "P7" H 10600 6200 50  0000 C CNN
 F 1 "LOGO2" V 10450 6100 50  0000 C CNN
 F 2 "CuriousElectric3:TCEC_Words_13mm" H 10600 6100 50  0001 C CNN
 F 3 "" H 10600 6100 50  0000 C CNN
@@ -86,10 +86,10 @@ F 3 "" H 10600 6100 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L matts_components:GND #PWR01
+L matts_components:GND #PWR05
 U 1 1 58A4AEF1
 P 3450 2250
-F 0 "#PWR01" H 3450 2000 50  0001 C CNN
+F 0 "#PWR05" H 3450 2000 50  0001 C CNN
 F 1 "GND" H 3450 2100 50  0000 C CNN
 F 2 "" H 3450 2250 50  0000 C CNN
 F 3 "" H 3450 2250 50  0000 C CNN
@@ -98,8 +98,6 @@ F 3 "" H 3450 2250 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1750 1650 1750 1400
-Wire Wire Line
-	1400 1400 1550 1400
 Wire Wire Line
 	1750 2050 1750 2150
 Wire Wire Line
@@ -113,14 +111,12 @@ Wire Wire Line
 NoConn ~ 10300 6300
 NoConn ~ 10600 6300
 Wire Wire Line
-	1400 2150 1750 2150
-Wire Wire Line
 	2350 1400 2800 1400
 $Comp
-L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR02
+L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR04
 U 1 1 58FDDFB1
 P 3400 1400
-F 0 "#PWR02" H 3400 1250 50  0001 C CNN
+F 0 "#PWR04" H 3400 1250 50  0001 C CNN
 F 1 "VCC" H 3400 1550 50  0000 C CNN
 F 2 "" H 3400 1400 50  0000 C CNN
 F 3 "" H 3400 1400 50  0000 C CNN
@@ -155,7 +151,7 @@ U 1 1 58FDE0E2
 P 6400 5850
 F 0 "C2" H 6425 5950 50  0000 L CNN
 F 1 "100n" H 6425 5750 50  0000 L CNN
-F 2 "matts_components:C1_wide_lg_pad" H 6438 5700 50  0001 C CNN
+F 2 "REInnovationFootprint:C1_wide_lg_pad_2" H 6438 5700 50  0001 C CNN
 F 3 "" H 6400 5850 50  0000 C CNN
 F 4 "~" H 6400 5850 60  0001 C CNN "Notes"
 F 5 "~" H 6400 5850 60  0001 C CNN "Description"
@@ -214,10 +210,10 @@ F 13 "~" H 2450 3250 60  0001 C CNN "Supplier 2 Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR03
+L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR02
 U 1 1 58FDE2CD
 P 2450 2550
-F 0 "#PWR03" H 2450 2400 50  0001 C CNN
+F 0 "#PWR02" H 2450 2400 50  0001 C CNN
 F 1 "VCC" H 2450 2700 50  0000 C CNN
 F 2 "" H 2450 2550 50  0000 C CNN
 F 3 "" H 2450 2550 50  0000 C CNN
@@ -225,10 +221,10 @@ F 3 "" H 2450 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:GND #PWR04
+L matts_components:GND #PWR03
 U 1 1 58FDE2FC
 P 2450 3500
-F 0 "#PWR04" H 2450 3250 50  0001 C CNN
+F 0 "#PWR03" H 2450 3250 50  0001 C CNN
 F 1 "GND" H 2450 3350 50  0000 C CNN
 F 2 "" H 2450 3500 50  0000 C CNN
 F 3 "" H 2450 3500 50  0000 C CNN
@@ -236,10 +232,10 @@ F 3 "" H 2450 3500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR05
+L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR013
 U 1 1 58FDE32B
 P 6400 5550
-F 0 "#PWR05" H 6400 5400 50  0001 C CNN
+F 0 "#PWR013" H 6400 5400 50  0001 C CNN
 F 1 "VCC" H 6400 5700 50  0000 C CNN
 F 2 "" H 6400 5550 50  0000 C CNN
 F 3 "" H 6400 5550 50  0000 C CNN
@@ -247,10 +243,10 @@ F 3 "" H 6400 5550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:GND #PWR06
+L matts_components:GND #PWR014
 U 1 1 58FDE35A
 P 6400 6200
-F 0 "#PWR06" H 6400 5950 50  0001 C CNN
+F 0 "#PWR014" H 6400 5950 50  0001 C CNN
 F 1 "GND" H 6400 6050 50  0000 C CNN
 F 2 "" H 6400 6200 50  0000 C CNN
 F 3 "" H 6400 6200 50  0000 C CNN
@@ -273,7 +269,7 @@ L SolarSpinner-rescue:R-Device-SolarSpinner-rescue R5
 U 1 1 58FDE43D
 P 5400 2350
 F 0 "R5" V 5480 2350 50  0000 C CNN
-F 1 "150" V 5400 2350 50  0000 C CNN
+F 1 "120" V 5400 2350 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 5330 2350 50  0001 C CNN
 F 3 "" H 5400 2350 50  0000 C CNN
 F 4 "~" H 5400 2350 60  0000 C CNN "Notes"
@@ -289,17 +285,6 @@ F 13 "~" H 5400 2350 60  0001 C CNN "Supplier 2 Cost"
 	1    5400 2350
 	0    -1   -1   0   
 $EndComp
-$Comp
-L SolarSpinner-rescue:Conn_01x02_Female-Connector-SolarSpinner-rescue P1
-U 1 1 58FDE60A
-P 1200 1750
-F 0 "P1" H 1200 1900 50  0000 C CNN
-F 1 "SOLAR" V 1300 1750 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-2_screw_terminal" H 1200 1750 50  0001 C CNN
-F 3 "" H 1200 1750 50  0000 C CNN
-	1    1200 1750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 5600 6400 5600
 Wire Wire Line
@@ -311,10 +296,10 @@ Wire Wire Line
 	6400 6000 6400 6100
 Connection ~ 6400 6100
 $Comp
-L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR07
+L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR011
 U 1 1 58FDEAEB
 P 6050 1400
-F 0 "#PWR07" H 6050 1250 50  0001 C CNN
+F 0 "#PWR011" H 6050 1250 50  0001 C CNN
 F 1 "VCC" H 6050 1550 50  0000 C CNN
 F 2 "" H 6050 1400 50  0000 C CNN
 F 3 "" H 6050 1400 50  0000 C CNN
@@ -322,10 +307,10 @@ F 3 "" H 6050 1400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:GND #PWR08
+L matts_components:GND #PWR012
 U 1 1 58FDEB29
 P 6050 2650
-F 0 "#PWR08" H 6050 2400 50  0001 C CNN
+F 0 "#PWR012" H 6050 2400 50  0001 C CNN
 F 1 "GND" H 6050 2500 50  0000 C CNN
 F 2 "" H 6050 2650 50  0000 C CNN
 F 3 "" H 6050 2650 50  0000 C CNN
@@ -341,7 +326,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 1850 6050 1850
 Wire Wire Line
-	5550 2350 5750 2350
+	5550 2350 5650 2350
 Wire Wire Line
 	2450 2550 2450 2650
 Wire Wire Line
@@ -357,17 +342,12 @@ Wire Wire Line
 Wire Wire Line
 	2450 3000 2650 3000
 Connection ~ 2450 3000
-Wire Wire Line
-	1400 1750 1400 1400
 Connection ~ 1750 1400
-Wire Wire Line
-	1400 1850 1400 2150
-Connection ~ 1750 2150
 $Comp
-L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR09
+L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR08
 U 1 1 58FDF957
 P 4550 4900
-F 0 "#PWR09" H 4550 4750 50  0001 C CNN
+F 0 "#PWR08" H 4550 4750 50  0001 C CNN
 F 1 "VCC" H 4550 5050 50  0000 C CNN
 F 2 "" H 4550 4900 50  0000 C CNN
 F 3 "" H 4550 4900 50  0000 C CNN
@@ -375,10 +355,10 @@ F 3 "" H 4550 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:GND #PWR010
+L matts_components:GND #PWR09
 U 1 1 58FDF995
 P 4750 5200
-F 0 "#PWR010" H 4750 4950 50  0001 C CNN
+F 0 "#PWR09" H 4750 4950 50  0001 C CNN
 F 1 "GND" H 4750 5050 50  0000 C CNN
 F 2 "" H 4750 5200 50  0000 C CNN
 F 3 "" H 4750 5200 50  0000 C CNN
@@ -404,10 +384,10 @@ MOTOR
 Wire Wire Line
 	3500 5900 3200 5900
 $Comp
-L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR011
+L SolarSpinner-rescue:VCC-power-SolarSpinner-rescue #PWR06
 U 1 1 58FE0109
 P 3950 6650
-F 0 "#PWR011" H 3950 6500 50  0001 C CNN
+F 0 "#PWR06" H 3950 6500 50  0001 C CNN
 F 1 "VCC" H 3950 6800 50  0000 C CNN
 F 2 "" H 3950 6650 50  0000 C CNN
 F 3 "" H 3950 6650 50  0000 C CNN
@@ -415,10 +395,10 @@ F 3 "" H 3950 6650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:GND #PWR012
+L matts_components:GND #PWR07
 U 1 1 58FE014A
 P 3950 7350
-F 0 "#PWR012" H 3950 7100 50  0001 C CNN
+F 0 "#PWR07" H 3950 7100 50  0001 C CNN
 F 1 "GND" H 3950 7200 50  0000 C CNN
 F 2 "" H 3950 7350 50  0000 C CNN
 F 3 "" H 3950 7350 50  0000 C CNN
@@ -477,10 +457,10 @@ F 13 "~" H 1550 3250 60  0001 C CNN "Supplier 2 Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L matts_components:GND #PWR013
+L matts_components:GND #PWR01
 U 1 1 59172123
 P 1550 3500
-F 0 "#PWR013" H 1550 3250 50  0001 C CNN
+F 0 "#PWR01" H 1550 3250 50  0001 C CNN
 F 1 "GND" H 1550 3350 50  0000 C CNN
 F 2 "" H 1550 3500 50  0000 C CNN
 F 3 "" H 1550 3500 50  0000 C CNN
@@ -498,14 +478,13 @@ Wire Wire Line
 Connection ~ 1550 3000
 Wire Wire Line
 	1550 2650 1550 1400
-Connection ~ 1550 1400
 Text HLabel 2950 6000 0    60   Input ~ 0
 Vsolar
 $Comp
-L SolarSpinner-rescue:Conn_01x07_Male-Connector-SolarSpinner-rescue P5
+L SolarSpinner-rescue:Conn_01x07_Male-Connector-SolarSpinner-rescue P3
 U 1 1 59173C75
 P 4250 6950
-F 0 "P5" H 4250 7350 50  0000 C CNN
+F 0 "P3" H 4250 7350 50  0000 C CNN
 F 1 "HEADER" V 4150 6950 50  0000 C CNN
 F 2 "REInnovationFootprint:SIL-7_DIO" H 4250 6950 50  0001 C CNN
 F 3 "" H 4250 6950 50  0000 C CNN
@@ -534,10 +513,10 @@ Wire Wire Line
 Wire Wire Line
 	4050 6750 3250 6750
 $Comp
-L SolarSpinner-rescue:Conn_01x01_Male-Connector-SolarSpinner-rescue P10
+L SolarSpinner-rescue:Conn_01x01_Male-Connector-SolarSpinner-rescue P5
 U 1 1 5917491E
 P 10000 6100
-F 0 "P10" H 10000 6200 50  0000 C CNN
+F 0 "P5" H 10000 6200 50  0000 C CNN
 F 1 "HOLES" V 9850 6100 50  0000 C CNN
 F 2 "REInnovationFootprint:PCB_Holes_40x50" H 10000 6100 50  0001 C CNN
 F 3 "" H 10000 6100 50  0000 C CNN
@@ -558,10 +537,10 @@ Wire Wire Line
 	3250 6750 3250 6000
 Connection ~ 3250 6000
 $Comp
-L SolarSpinner-rescue:R-Device-SolarSpinner-rescue R6
+L SolarSpinner-rescue:R-Device-SolarSpinner-rescue R7
 U 1 1 591769AF
 P 7400 1850
-F 0 "R6" V 7480 1850 50  0000 C CNN
+F 0 "R7" V 7480 1850 50  0000 C CNN
 F 1 "330" V 7400 1850 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 7330 1850 50  0001 C CNN
 F 3 "" H 7400 1850 50  0000 C CNN
@@ -579,10 +558,10 @@ F 13 "~" H 7400 1850 60  0001 C CNN "Supplier 2 Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:GND #PWR014
+L matts_components:GND #PWR015
 U 1 1 59176BF9
 P 7400 2700
-F 0 "#PWR014" H 7400 2450 50  0001 C CNN
+F 0 "#PWR015" H 7400 2450 50  0001 C CNN
 F 1 "GND" H 7400 2550 50  0000 C CNN
 F 2 "" H 7400 2700 50  0000 C CNN
 F 3 "" H 7400 2700 50  0000 C CNN
@@ -604,10 +583,10 @@ Wire Notes Line
 Text Notes 1150 5250 0    60   ~ 0
 ATTiny85 Arduino Pins:\nIC Pin:       Arduino Ref:\n1                5/A0/RST\n2                3/A3\n3                4/A2\n4                GND\n5                0 - PWM\n6                1 - PWM\n7                2/A1\n8                +Supply
 $Comp
-L SolarSpinner-rescue:LED-Device-SolarSpinner-rescue D2
+L SolarSpinner-rescue:LED-Device-SolarSpinner-rescue D3
 U 1 1 5968E412
 P 7400 2300
-F 0 "D2" H 7400 2400 50  0000 C CNN
+F 0 "D3" H 7400 2400 50  0000 C CNN
 F 1 "LED" H 7400 2200 50  0000 C CNN
 F 2 "REInnovationFootprint:LED-5MM_larg_pad" H 7400 2300 50  0001 C CNN
 F 3 "" H 7400 2300 50  0000 C CNN
@@ -660,9 +639,9 @@ Wire Wire Line
 	3250 6000 3500 6000
 Wire Wire Line
 	3100 5600 3400 5600
-Text HLabel 2950 5600 0    60   Input ~ 0
-LED
 Text HLabel 2950 5800 0    60   Input ~ 0
+LED
+Text HLabel 2950 5600 0    60   Input ~ 0
 PIEZO
 Wire Wire Line
 	2950 5600 3100 5600
@@ -683,7 +662,7 @@ U 1 1 58A49F68
 P 1750 1850
 F 0 "SC1" H 1850 1950 50  0000 L CNN
 F 1 "PV_CELL" H 1850 1850 50  0000 L CNN
-F 2 "REInnovationFootprint:PV_50x30mm_round" V 1750 1910 50  0001 C CNN
+F 2 "REInnovationFootprint:SIL-2_screw_terminal" V 1750 1910 50  0001 C CNN
 F 3 "" V 1750 1910 50  0000 C CNN
 F 4 "~" H 1750 1850 60  0000 C CNN "Notes"
 F 5 "53x30mm 30mA 5V PV module" H 1750 1850 60  0001 C CNN "Description"
@@ -701,10 +680,10 @@ $EndComp
 Wire Wire Line
 	3950 7350 3950 7250
 $Comp
-L SolarSpinner-rescue:Conn_01x02_Male-Connector-SolarSpinner-rescue P3
+L SolarSpinner-rescue:Conn_01x02_Male-Connector-SolarSpinner-rescue P4
 U 1 1 58FDE4BD
 P 6300 1850
-F 0 "P3" H 6300 2000 50  0000 C CNN
+F 0 "P4" H 6300 2000 50  0000 C CNN
 F 1 "MOTOR" V 6200 1800 50  0000 C CNN
 F 2 "REInnovationFootprint:SIL-2_screw_terminal" H 6300 1850 50  0001 C CNN
 F 3 "" H 6300 1850 50  0000 C CNN
@@ -718,10 +697,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 5050 3300 5050
 $Comp
-L matts_components:ISP_3X2 P4
+L matts_components:ISP_3X2 P2
 U 1 1 5F3F13F1
 P 4050 5100
-F 0 "P4" H 4050 5450 50  0000 C CNN
+F 0 "P2" H 4050 5450 50  0000 C CNN
 F 1 "ISP_3X2" H 4050 5366 40  0000 C CNN
 F 2 "REInnovationFootprint:ISP_3x2" H 4050 5100 60  0001 C CNN
 F 3 "" H 4050 5100 60  0000 C CNN
@@ -729,11 +708,11 @@ F 3 "" H 4050 5100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matts_components:DIODE D3
+L matts_components:DIODE D2
 U 1 1 5F409EC2
 P 5700 1900
-F 0 "D3" V 5738 1822 40  0000 R CNN
-F 1 "DIODE" V 5662 1822 40  0000 R CNN
+F 0 "D2" V 5738 1822 40  0000 R CNN
+F 1 "1N4001" V 5662 1822 40  0000 R CNN
 F 2 "REInnovationFootprint:TH_Diode_1" H 5700 1900 60  0001 C CNN
 F 3 "" H 5700 1900 60  0000 C CNN
 	1    5700 1900
@@ -761,30 +740,94 @@ Wire Wire Line
 	2800 1400 3400 1400
 Wire Wire Line
 	8500 2150 8500 2700
-Wire Wire Line
-	8500 2050 8500 1600
 $Comp
-L matts_components:GND #PWR0101
+L matts_components:GND #PWR016
 U 1 1 5E8C2F6A
 P 8500 2700
-F 0 "#PWR0101" H 8500 2450 50  0001 C CNN
+F 0 "#PWR016" H 8500 2450 50  0001 C CNN
 F 1 "GND" H 8500 2550 50  0000 C CNN
 F 2 "" H 8500 2700 50  0000 C CNN
 F 3 "" H 8500 2700 50  0000 C CNN
 	1    8500 2700
 	1    0    0    -1  
 $EndComp
-Text HLabel 8500 1600 0    60   Input ~ 0
+Text HLabel 8300 1100 0    60   Input ~ 0
 PIEZO
 $Comp
 L SolarSpinner-rescue:Speaker-Device-SolarSpinner-rescue LS1
 U 1 1 5E8A140A
 P 8700 2050
 F 0 "LS1" H 8870 2046 50  0000 L CNN
-F 1 "Speaker" H 8870 1955 50  0000 L CNN
+F 1 "PIEZO" H 8870 1955 50  0000 L CNN
 F 2 "REInnovationFootprint:SIL-2_screw_terminal" H 8700 1850 50  0001 C CNN
 F 3 "~" H 8690 2000 50  0001 C CNN
 	1    8700 2050
 	1    0    0    -1  
 $EndComp
+$Comp
+L SolarSpinner-rescue:R-Device-SolarSpinner-rescue R6
+U 1 1 5FB81C53
+P 5650 2650
+F 0 "R6" V 5730 2650 50  0000 C CNN
+F 1 "100k" V 5650 2650 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" V 5580 2650 50  0001 C CNN
+F 3 "" H 5650 2650 50  0000 C CNN
+F 4 "~" H 5650 2650 60  0000 C CNN "Notes"
+F 5 "~" H 5650 2650 60  0001 C CNN "Description"
+F 6 "~" H 5650 2650 60  0001 C CNN "Manufacturer"
+F 7 "~" H 5650 2650 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 5650 2650 60  0001 C CNN "Supplier 1"
+F 9 "~" H 5650 2650 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 5650 2650 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 5650 2650 60  0001 C CNN "Supplier 2"
+F 12 "~" H 5650 2650 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 5650 2650 60  0001 C CNN "Supplier 2 Cost"
+	1    5650 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L matts_components:GND #PWR010
+U 1 1 5FB83DF1
+P 5650 2900
+F 0 "#PWR010" H 5650 2650 50  0001 C CNN
+F 1 "GND" H 5650 2750 50  0000 C CNN
+F 2 "" H 5650 2900 50  0000 C CNN
+F 3 "" H 5650 2900 50  0000 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2900 5650 2800
+Wire Wire Line
+	5650 2500 5650 2350
+Connection ~ 5650 2350
+Wire Wire Line
+	5650 2350 5750 2350
+$Comp
+L SolarSpinner-rescue:R-Device-SolarSpinner-rescue R8
+U 1 1 5FB96436
+P 8500 1350
+F 0 "R8" V 8580 1350 50  0000 C CNN
+F 1 "120" V 8500 1350 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" V 8430 1350 50  0001 C CNN
+F 3 "" H 8500 1350 50  0000 C CNN
+F 4 "~" H 8500 1350 60  0000 C CNN "Notes"
+F 5 "~" H 8500 1350 60  0001 C CNN "Description"
+F 6 "~" H 8500 1350 60  0001 C CNN "Manufacturer"
+F 7 "~" H 8500 1350 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 8500 1350 60  0001 C CNN "Supplier 1"
+F 9 "~" H 8500 1350 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.01" H 8500 1350 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 8500 1350 60  0001 C CNN "Supplier 2"
+F 12 "~" H 8500 1350 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 8500 1350 60  0001 C CNN "Supplier 2 Cost"
+	1    8500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1100 8500 1100
+Wire Wire Line
+	8500 1100 8500 1200
+Wire Wire Line
+	8500 1500 8500 2050
 $EndSCHEMATC

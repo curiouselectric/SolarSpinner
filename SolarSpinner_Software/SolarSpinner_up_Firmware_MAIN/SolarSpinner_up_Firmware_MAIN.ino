@@ -22,6 +22,7 @@
 volatile boolean f_wdt = 1;
 float Vpower;
 float Vsolar;
+float Vpower_previous;
 int motorPWM = 0; // This is the motor PWM value
 boolean LEDstate = LOW;
 boolean motorRun = LOW;
@@ -50,6 +51,7 @@ void loop() {
     {
       // Set motor running
       motorRun = HIGH;
+      motorPWM = 255;
     }
     else if (Vpower < VOLT_LOW)
     {
@@ -59,10 +61,28 @@ void loop() {
       LEDstate = LOW;
       digitalWrite(PIN_LED, LEDstate);  // Switch OFF led
     }
+    else if (Vpower < Vpower_previous)
+    {
+      motorPWM--;   // Ramp down the motorPWM
+      if (motorPWM <= 0)
+      {
+        motorPWM = 0;
+      }
+    }
+    else if (Vpower > Vpower_previous)
+    {
+      motorPWM++;   // Ramp down the motorPWM
+      if (motorPWM > 255)
+      {
+        motorPWM = 255;
+      }
+    }
+
+    Vpower_previous = Vpower;
 
     if (motorRun == HIGH)
     {
-      analogWrite(PIN_MOTOR, random(10, 255)); // Set Motor to run at PWM level
+      analogWrite(PIN_MOTOR, motorPWM);     // Set Motor to run at PWM level
       //digitalWrite(PIN_MOTOR, HIGH);      // Switch ON motor
       LEDstate = !LEDstate;
       digitalWrite(PIN_LED, LEDstate);    // let led blink

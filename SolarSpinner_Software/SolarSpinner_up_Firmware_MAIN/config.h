@@ -18,5 +18,5 @@
 
 // Control parameters
 
-#define VOLT_LOW    1.0
-#define VOLT_HIGH   5.0
+#define VOLT_LOW    2.0
+#define VOLT_HIGH   4.5
