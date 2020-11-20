@@ -135,27 +135,6 @@ Wire Wire Line
 	3450 2150 3450 2250
 NoConn ~ 10300 6300
 NoConn ~ 10600 6300
-$Comp
-L SolarSpinner-rescue:Conn_01x02_Male-Connector-SolarSpinner-rescue P2
-U 1 1 58B44224
-P 3650 900
-F 0 "P2" H 3650 1050 50  0000 C CNN
-F 1 "SOLAR_V" V 3550 850 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-2_LG_PAD" H 3650 900 50  0001 C CNN
-F 3 "" H 3650 900 50  0000 C CNN
-	1    3650 900 
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 1000 3200 1000
-Wire Wire Line
-	3200 1000 3200 2150
-Connection ~ 3200 2150
-Wire Wire Line
-	3450 900  3100 900 
-Wire Wire Line
-	3100 900  3100 1400
-Connection ~ 3100 1400
 Wire Wire Line
 	1400 2150 1750 2150
 Wire Wire Line
@@ -677,14 +656,6 @@ ISP Connections:\n1 - MISO\n2 - Vcc\n3 - SCK\n4 - MOSI\n5 - RESET\n6 - GND\n
 Wire Wire Line
 	4750 5150 4750 5200
 Wire Wire Line
-	2800 1400 3100 1400
-Wire Wire Line
-	2800 2150 3200 2150
-Wire Wire Line
-	3200 2150 3450 2150
-Wire Wire Line
-	3100 1400 3400 1400
-Wire Wire Line
 	6400 5600 6400 5700
 Wire Wire Line
 	6400 6100 6400 6200
@@ -835,4 +806,8 @@ Wire Wire Line
 	7400 2000 7400 2150
 Wire Wire Line
 	7400 2450 7400 2700
+Wire Wire Line
+	2800 2150 3450 2150
+Wire Wire Line
+	2800 1400 3400 1400
 $EndSCHEMATC

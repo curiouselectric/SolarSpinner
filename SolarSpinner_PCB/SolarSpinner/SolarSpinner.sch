@@ -2,32 +2,9 @@ EESchema Schematic File Version 4
 LIBS:SolarSpinner-rescue
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:SolarSpinner-cache
 EELAYER 29 0
 EELAYER END
@@ -296,7 +273,7 @@ L SolarSpinner-rescue:R-Device-SolarSpinner-rescue R5
 U 1 1 58FDE43D
 P 5400 2350
 F 0 "R5" V 5480 2350 50  0000 C CNN
-F 1 "330" V 5400 2350 50  0000 C CNN
+F 1 "150" V 5400 2350 50  0000 C CNN
 F 2 "REInnovationFootprint:TH_Resistor_1" V 5330 2350 50  0001 C CNN
 F 3 "" H 5400 2350 50  0000 C CNN
 F 4 "~" H 5400 2350 60  0000 C CNN "Notes"
@@ -683,17 +660,6 @@ Wire Wire Line
 	3250 6000 3500 6000
 Wire Wire Line
 	3100 5600 3400 5600
-$Comp
-L SolarSpinner-rescue:Speaker-Device-SolarSpinner-rescue LS1
-U 1 1 5E8A140A
-P 8700 2050
-F 0 "LS1" H 8870 2046 50  0000 L CNN
-F 1 "Speaker" H 8870 1955 50  0000 L CNN
-F 2 "REInnovationFootprint:SIL-2_screw_terminal" H 8700 1850 50  0001 C CNN
-F 3 "~" H 8690 2000 50  0001 C CNN
-	1    8700 2050
-	1    0    0    -1  
-$EndComp
 Text HLabel 2950 5600 0    60   Input ~ 0
 LED
 Text HLabel 2950 5800 0    60   Input ~ 0
@@ -709,23 +675,6 @@ Wire Wire Line
 Connection ~ 3150 5800
 Text HLabel 7300 1500 0    60   Input ~ 0
 LED
-Text HLabel 8500 1600 0    60   Input ~ 0
-PIEZO
-$Comp
-L matts_components:GND #PWR0101
-U 1 1 5E8C2F6A
-P 8500 2700
-F 0 "#PWR0101" H 8500 2450 50  0001 C CNN
-F 1 "GND" H 8500 2550 50  0000 C CNN
-F 2 "" H 8500 2700 50  0000 C CNN
-F 3 "" H 8500 2700 50  0000 C CNN
-	1    8500 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 2050 8500 1600
-Wire Wire Line
-	8500 2150 8500 2700
 Wire Wire Line
 	7300 1500 7400 1500
 $Comp
@@ -810,4 +759,32 @@ Wire Wire Line
 	2800 2150 3450 2150
 Wire Wire Line
 	2800 1400 3400 1400
+Wire Wire Line
+	8500 2150 8500 2700
+Wire Wire Line
+	8500 2050 8500 1600
+$Comp
+L matts_components:GND #PWR0101
+U 1 1 5E8C2F6A
+P 8500 2700
+F 0 "#PWR0101" H 8500 2450 50  0001 C CNN
+F 1 "GND" H 8500 2550 50  0000 C CNN
+F 2 "" H 8500 2700 50  0000 C CNN
+F 3 "" H 8500 2700 50  0000 C CNN
+	1    8500 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 8500 1600 0    60   Input ~ 0
+PIEZO
+$Comp
+L SolarSpinner-rescue:Speaker-Device-SolarSpinner-rescue LS1
+U 1 1 5E8A140A
+P 8700 2050
+F 0 "LS1" H 8870 2046 50  0000 L CNN
+F 1 "Speaker" H 8870 1955 50  0000 L CNN
+F 2 "REInnovationFootprint:SIL-2_screw_terminal" H 8700 1850 50  0001 C CNN
+F 3 "~" H 8690 2000 50  0001 C CNN
+	1    8700 2050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
