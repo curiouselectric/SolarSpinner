@@ -31,9 +31,10 @@
 // Control parameters
 #define VOLT_LOW    2.0
 #define VOLT_HIGH   4.5
+#define MAX_SPEED   75
+#define MIN_SPEED   25
 
-#define MODE        1       // This sets what the unit does: 0 = solar motor, 1 = solar cricket (day) 2 = solar cricket (night)
+#define MODE        0       // This sets what the unit does: 0 = solar motor, 1 = solar cricket (day) 2 = solar cricket (night)
 
-
-#define WDT_MODE    6       // 0=16ms, 1=32ms,2=64ms,3=128ms,4=250ms,5=500ms
+#define WDT_MODE    5       // 0=16ms, 1=32ms,2=64ms,3=128ms,4=250ms,5=500ms
                             // 6=1 sec,7=2 sec, 8=4 sec, 9= 8sec

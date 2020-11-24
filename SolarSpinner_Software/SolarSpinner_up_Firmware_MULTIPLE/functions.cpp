@@ -5,13 +5,19 @@
 #include "config.h"
 #include "functions.h"
 
-void system_sleep()
+void system_sleep(int _mode)
 {
   // set system into the sleep state
   // system wakes up when wtchdog is timed out
   cbi(ADCSRA, ADEN);                   // switch Analog to Digitalconverter OFF
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN); // sleep mode is set here
-  //set_sleep_mode(SLEEP_MODE_IDLE);   // sleep mode is set here
+  if (_mode == 0)
+  {
+    set_sleep_mode(SLEEP_MODE_IDLE);   // sleep mode is set here
+  }
+  else
+  {
+    set_sleep_mode(SLEEP_MODE_PWR_DOWN); // sleep mode is set here
+  }
   sleep_enable();
   sleep_mode();                        // System sleeps here
   sleep_disable();                     // System continues execution here when watchdog timed out

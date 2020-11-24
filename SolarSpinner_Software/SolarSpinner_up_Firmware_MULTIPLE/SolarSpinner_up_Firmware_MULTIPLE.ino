@@ -34,7 +34,7 @@ void setup()
 
   setup_watchdog(WDT_MODE); // approximately 0.5 seconds sleep
   analogReference(INTERNAL);
-  randomSeed(analogRead(PIN_VCAP)); // Sets up a random seed
+  //randomSeed(analogRead(PIN_VCAP)); // Sets up a random seed
   local_mode = MODE;
 }
 
@@ -56,40 +56,35 @@ void loop() {
         {
           // Set motor running
           modeRun = HIGH;
-          motorPWM = 255;
+          motorPWM = MAX_SPEED;
         }
         else if (Vpower < VOLT_LOW)
         {
           // Too low - switch off everything and go to sleep!
           modeRun = LOW;
-          digitalWrite(PIN_MOTOR, LOW);     // Switch OFF motor
+          analogWrite(PIN_MOTOR, 0);     // Set Motor to run at PWM level
           digitalWrite(PIN_LED, LOW);  // Switch OFF led
-
         }
         else if (Vpower < Vpower_previous)
         {
           motorPWM--;   // Ramp down the motorPWM
-          if (motorPWM <= 0)
+          if (motorPWM <= MIN_SPEED)
           {
-            motorPWM = 0;
+            motorPWM = MIN_SPEED;
           }
         }
         else if (Vpower > Vpower_previous)
         {
           motorPWM++;   // Ramp down the motorPWM
-          if (motorPWM > 255)
+          if (motorPWM > MAX_SPEED)
           {
-            motorPWM = 255;
+            motorPWM = MAX_SPEED;
           }
         }
         if (modeRun == HIGH)
         {
           analogWrite(PIN_MOTOR, motorPWM);     // Set Motor to run at PWM level
-          //digitalWrite(PIN_MOTOR, HIGH);      // Switch ON motor
-          //          LEDstate = !LEDstate;
-          //          digitalWrite(PIN_LED, LEDstate);    // let led blink
-          flash(2, PIN_LED);
-          //delay(5);
+          flash(1, PIN_LED);
         }
         Vpower_previous = Vpower;     // Store the prvious power value for next time analysis
         break;
@@ -128,10 +123,10 @@ void loop() {
 
     //pinMode(PIN_LED, INPUT); // set all used port to intput to save power
     //pinMode(PIN_MOTOR, INPUT); // set all used port to intput to save power
-    system_sleep();
+    system_sleep(local_mode);
     //pinMode(PIN_LED, OUTPUT); // set all ports into state before sleep
     //pinMode(PIN_MOTOR, OUTPUT); // set all ports into state before sleep
-    pinMode(PIN_BUZZER, OUTPUT);
+    //pinMode(PIN_BUZZER, OUTPUT);
   }
 }
 
